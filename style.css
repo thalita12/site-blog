@@ -1,0 +1,292 @@
+/* Autora: thalitaribeirooliveira@gmail.com */
+/* Utilitário */
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-azul {
+    background-color: #4dabc4;
+}
+
+.bg-cinza {
+    background-color: #f9faff;
+}
+
+.bg-cinza-claro {
+    background-color: #f7f5f7;
+}
+
+/* Header */
+.header-absolute {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: .9rem;
+    padding: 1.2rem 1rem;
+}
+
+.navbar {
+    padding: 0 1rem;
+    min-height: .9rem;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.navbar-light .navbar-nav .nav-link, .titulo-principal, .titulo-secundario {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #20515E;
+    border-bottom: .2rem solid #20515E;
+}
+
+/* Banner principal */
+.banner-principal {
+    background: #347080;
+    height: 38rem;
+    display: flex;
+    align-items: center;
+    background-image: url('./images/header_four.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo-principal {
+    width: 40%;
+    margin: 0 auto 2rem;
+    font-size: 2.1rem;
+}
+
+.titulo-secundario {
+    width: 45%;
+    margin: 0 auto 2rem;
+}
+
+/* Botões */
+.btn-post, .btn-branco, .btn-azul, .btn-azul-escuro {
+    padding: .575rem 1.75rem;
+    font-weight: 500;
+    border-radius: 1.25rem;
+}
+
+.btn-branco {
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 0;
+    color: #0eadc7;
+}
+
+.btn-branco-simples {
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 0;
+    color: #0eadc7;
+    padding: .575rem 1rem;
+    font-weight: 500;
+}
+
+.btn-branco:hover, .btn-branco:active, .btn-branco:focus, .btn-post:hover, .btn-post:active, .btn-post:focus, .btn-branco-simples:hover, .btn-branco-simples:active, .btn-branco-simples:focus {
+    background-color: #fcfcfc;
+    color: #347080;
+}
+
+.btn-azul {
+    text-transform: uppercase;
+    background-color: #0eadc7;
+    border: 0;
+    color: #fff;
+}
+
+.btn-azul:hover, .btn-azul:active, .btn-azul:focus {
+    background-color: #0e99b3;
+    color: #fff;
+}
+
+.btn-azul-escuro {
+    text-transform: uppercase;
+    background-color: #29537A;
+    border: 0;
+    color: #fff;
+}
+
+.btn-azul-escuro:hover, .btn-azul-escuro:active, .btn-azul-escuro:focus {
+    background-color: #293f66;
+    color: #fff;
+}
+
+.btn-post {
+    background-color: #fff;
+    border: 1px solid #0eadc7;
+    color: #0eadc7;
+}
+
+/* Produtos */
+.produtos {
+    padding: 6rem 0;
+}
+
+.produtos .card-body {
+    padding: 3rem 1.5rem;
+}
+
+/* Card */
+.card {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    transition: .3s;
+    border: 0;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4c4c4c;
+}
+
+.card-body img {
+    margin: 1.5rem auto;
+}
+
+.card-img-logo {
+    display: block;
+    margin: 0 auto 1.5rem !important;
+}
+
+/* Seção clientes */
+.secao-clientes {
+    color: #fff;
+    height: 20rem;
+}
+
+.secao-clientes p {
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.secao-clientes h3 {
+    margin-bottom: 2rem;
+}
+
+.secao-clientes-nome {
+    font-size: 1.1rem;
+}
+
+.card-cliente {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.card-img {
+    border-radius: .25rem;
+    width: auto;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    transition: .3s;
+    margin-left: -1.1rem;
+}
+
+.card-img:hover {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.col-post {
+    max-width: 18rem;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.col-post .card {
+    width: 18rem;
+    margin: 0 auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.col-post .card-text {
+    font-size: .8rem;
+    color: #4c4c4c;
+}
+
+/* Blog */
+.blog {
+    margin: 5rem auto;
+}
+
+.titulo-blog {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    color: #4c4c4c;
+}
+
+.alinhar-centralizado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alinhar-centralizado p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Rodapé */
+.btn-link {
+    border: 1px solid #d8d8d8;
+    padding: 2rem;
+    border-radius: .25rem;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #616161 !important;
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+    color: #616161 !important;
+    background-color: #f0eef0;
+    border: 1px solid #d8d8d8;
+}
+
+.btn-link i {
+    display: block;
+}
+
+.direitos-autorais {
+    font-size: .75rem;
+}
+
+.botao-centro {
+    margin: -1rem auto 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Rodapé */
+.lista-menu {
+    margin-bottom: 0;
+    padding: 0;
+    color: #616161;
+    box-sizing: border-box;
+}
+
+.lista-menu > li {
+    list-style: none;
+}
+
+.lista-menu > li a {
+    font-size: .9rem;
+}
