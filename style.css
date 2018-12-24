@@ -5,7 +5,11 @@ html, body {
 }
 
 .bg-azul {
-    background-color: #4dabc4;
+    background-color: #0eadc7;
+}
+
+.bg-azul-escuro {
+    background-color: #1d527c;
 }
 
 .bg-cinza {
@@ -67,7 +71,7 @@ html, body {
 }
 
 /* Botões */
-.btn-post, .btn-branco, .btn-azul, .btn-azul-escuro {
+.btn-post, .btn-branco, .btn-azul, .btn-azul-escuro, .btn-branco-azul {
     padding: .575rem 1.75rem;
     font-weight: 500;
     border-radius: 1.25rem;
@@ -89,9 +93,34 @@ html, body {
     font-weight: 500;
 }
 
+.btn-branco-azul-simples {
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 0;
+    color: #1d527c;
+    padding: .575rem 1rem;
+    font-weight: 500;
+}
+
+.btn-branco-azul {
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 0;
+    color: #1d527c;
+}
+
 .btn-branco:hover, .btn-branco:active, .btn-branco:focus, .btn-post:hover, .btn-post:active, .btn-post:focus, .btn-branco-simples:hover, .btn-branco-simples:active, .btn-branco-simples:focus {
     background-color: #fcfcfc;
     color: #347080;
+}
+
+.btn-branco-azul:hover, .btn-branco-azul:active, .btn-branco-azul:focus, .btn-branco-azul-simples:active, .btn-branco-azul-simples:focus, .btn-branco-azul-simples:hover {
+    background-color: #fcfcfc;
+    color: #293f66;
+}
+
+.btn-post:hover, .btn-post:active, .btn-post:focus {
+    border: 1px solid #347080;
 }
 
 .btn-azul {
@@ -125,11 +154,11 @@ html, body {
 }
 
 /* Produtos */
-.produtos {
+.produtos, .beneficios {
     padding: 6rem 0;
 }
 
-.produtos .card-body {
+.produtos .card-body, .beneficios .card-body {
     padding: 3rem 1.5rem;
 }
 
@@ -222,6 +251,58 @@ html, body {
     color: #4c4c4c;
 }
 
+/* Benefícios */
+.beneficios .fa {
+    font-size: 3rem;
+    color: #1d527c;
+}
+
+.beneficios h6 {
+    text-transform: uppercase;
+    color: #1d527c;
+    margin: 1rem auto;
+}
+
+.beneficios .card-body {
+    font-size: .9rem;
+}
+
+/* Features */
+.section-funcionalidades {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    color: #4c4c4c;
+}
+
+.section-funcionalidades .row {
+    margin: auto;
+    align-items: center;
+}
+
+.section-funcionalidades-titulo {
+    font-size: 1.4rem !important;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    font-weight: 600;
+}
+
+.section-funcionalidades-text {
+    font-size: .9rem;
+}
+
+.navy-line {
+    width: 4rem;
+    margin: 2rem auto 0 0;
+    border-bottom: 3px solid #1d527c;
+}
+
+/* Cinto*/
+.cinto-oportunidade .h5 {
+    color: #fff;
+}
+
 /* Blog */
 .blog {
     margin: 5rem auto;
@@ -289,4 +370,45 @@ html, body {
 
 .lista-menu > li a {
     font-size: .9rem;
+}
+
+.footer-logo {
+    margin: 3rem auto .5rem;
+}
+
+.titulo-menu {
+    color: #616161;
+}
+
+.info-contato {
+    color: #616161;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 1rem;
+    }
+
+    .titulo-principal, .titulo-secundario {
+        width: 100%;
+    }
+
+    .produtos, .beneficios {
+        padding: 3rem 0;
+    }
+
+    .card-cliente {
+        width: 95%;
+    }
+
+    .titulo-blog, .blog {
+        margin-bottom: 3rem;
+    }
+
+    .blog .row {
+        margin: 0 auto;
+    }
 }
