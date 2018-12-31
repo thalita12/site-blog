@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Plataforma para a sua empresa se tornar uma máquina" content="Desenvolvido por AZ Tecnologia em Gestão">
+    <title>efcaz</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico"/> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+          integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+<!-- Header -->
+<nav id="header" class="navbar navbar-expand-lg navbar-light bg-azul fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logoEfcaz-branco.svg" width="162" height="40" alt="Logo da efcaz">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0;">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicial <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./page-srm.html">SRM</a>
+                        <a class="dropdown-item" href="./page-clm.html">CLM</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Área -->
+<section id="area" class="area">
+    <div class="bg-cinza-claro">
+        <div class="container text-center">
+            <h1>
+                <strong>Dúvidas Frequentes</strong>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="area-perguntas">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                       aria-controls="home" aria-selected="true">
+                        Efcaz SRM
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                       aria-controls="profile" aria-selected="false">
+                        Efcaz CLM
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h6 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Como realizar o cadastro de um novo usuário?
+                                   <button class="btn-pergunta"></button>
+                                </h6>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h6 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Como iniciar o cadastro e enviar para produção?
+                                    <button class="btn-pergunta"></button>
+                                </h6>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h6 class="mb-0" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Como corrigir pendências em meu cadastro?
+                                    <button class="btn-pergunta"></button>
+                                </h6>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="accordion" id="accordionClm">
+                        <div class="card">
+                            <div class="card-header" id="headingOne2">
+                                <h6 class="mb-0" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true"
+                                    aria-controls="collapseOne2">
+                                    Como faço tal coisa de um jeito diferente?
+                                    <button class="btn-pergunta"></button>
+                                </h6>
+                            </div>
+
+                            <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2"
+                                 data-parent="#accordionClm">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo2">
+                                <h6 class="mb-0" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false"
+                                    aria-controls="collapseTwo2">
+                                    Como mudar de plano?
+                                    <button class="btn-pergunta"></button>
+                                </h6>
+                            </div>
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2"
+                                 data-parent="#accordionClm">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree3">
+                                <h6 class="mb-0" data-toggle="collapse" data-target="#collapseThree3"
+                                    aria-expanded="false" aria-controls="collapseThree3">
+                                    Como solicitar aprovação de uma empresa?
+                                    <button class="btn-pergunta"></button>
+                                </h6>
+                            </div>
+                            <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3"
+                                 data-parent="#accordionClm">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cinto -->
+<section id="cinto-demonstracao" class="cinto-demonstracao bg-azul">
+    <div class="container alinhar-centralizado">
+        <p class="h5">
+            Torne seu negócio mais ágil e otimize seus resultados.
+        </p>
+
+        <a href="#" role="button" class="btn btn-branco-simples">
+            Solicite uma demonstração
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="rodape">
+    <div id="info" class="bg-cinza-claro rodape-info">
+        <div class="container">
+            <div class="linha">
+                <div class="col">
+                    <a role="link" class="btn-link">
+                        <i class="fas fa-rss"></i>
+                        Artigos do Blog
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a role="link" class="btn-link">
+                        <i class="fas fa-play-circle"></i>
+                        Vídeos
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a role="link" class="btn-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        Perguntas frequentes
+                    </a>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="col">
+                    <img class="footer-logo" src="https://via.placeholder.com/230x50" alt="Card image cap">
+
+                    <p class="info-contato">
+                        Um produto <a href="http://www.azi.com.br/" target="_blank">AZ Tecnologia em Gestão</a>
+                    </p>
+                </div>
+
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-5">
+                            <p class="titulo-menu">
+                                <strong>
+                                    Institucional
+                                </strong>
+                            </p>
+
+                            <ul class="lista-menu">
+                                <li>
+                                    <a>
+                                        &#187; Inicial
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Produtos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Quem Somos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Contato
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Privacidade
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Termos de Uso
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-7">
+                            <p class="titulo-menu">
+                                <strong>
+                                    Conteúdo
+                                </strong>
+                            </p>
+
+                            <ul class="lista-menu">
+                                <li>
+                                    <a>
+                                        &#187; Avaliação de Fornecedores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Cadeia de Suprimentos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Dúvidas Frequentes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Gestão de Fornecedores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Gestão de Risco
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        &#187; Homologação de Fornecedores
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <p class="titulo-menu">
+                        <strong>
+                            Contato
+                        </strong>
+                    </p>
+
+                    <p class="info-contato">
+                        <i class="fa fa-map-marker-alt mr-1"></i> R. 25 de Dezembro, 2071 Campo Grande / MS<br>
+                        CEP: 79010-220
+                    </p>
+
+                    <p class="info-contato">
+                        <i class="fa fa-phone mr-1"></i> +55 (67) 3303-2719 / 3303-2700
+                    </p>
+
+                    <p class="info-contato">
+                        <i class="fa fa-envelope mr-1"></i> contato@efcaz.com.br
+                    </p>
+
+                    <p class="info-contato">
+                        <i class="fa fa-map-marker-alt mr-1"></i> Av. José Rocha Bomfim, 214<br>
+                        Edifício Frankfurt - Sala 115<br>
+                        Santa Genebra - Campinas - São Paulo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright" class="bg-azul rodape-copyright">
+        <div class="container">
+            <div class="alinhar-centralizado">
+                <div>
+                    <a role="link">
+                        <i class="fa fa-heart"></i>
+                    </a>
+
+                    <a role="link">
+                        <i class="fa fa-anchor"></i>
+                    </a>
+                </div>
+
+                <p class="direitos-autorais">
+                    &copy; 2018 AZ Tecnologia em Gestão - Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

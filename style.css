@@ -44,8 +44,8 @@ html, body {
 }
 
 .navbar-light .navbar-nav .active > .nav-link {
-    color: #20515E;
-    border-bottom: .2rem solid #20515E;
+    color: #fff;
+    border-bottom: .2rem solid #fff;
 }
 
 /* Banner principal */
@@ -158,6 +158,15 @@ html, body {
     padding: 6rem 0;
 }
 
+.produtos .linha, .beneficios .linha {
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.produtos .card {
+    width: 45%;
+}
+
 .produtos .card-body, .beneficios .card-body {
     padding: 3rem 1.5rem;
 }
@@ -182,7 +191,7 @@ html, body {
 }
 
 .card-body img {
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 
 .card-img-logo {
@@ -194,6 +203,7 @@ html, body {
 .secao-clientes {
     color: #fff;
     height: 20rem;
+    padding: 3rem 0;
 }
 
 .secao-clientes p {
@@ -216,6 +226,8 @@ html, body {
     border: 1px solid rgba(0, 0, 0, .125);
     padding: 3rem;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-img {
@@ -223,7 +235,6 @@ html, body {
     width: auto;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     transition: .3s;
-    margin-left: -1.1rem;
 }
 
 .card-img:hover {
@@ -233,9 +244,9 @@ html, body {
 }
 
 .col-post {
-    max-width: 18rem;
+    width: 33.333%;
     padding: 0;
-    margin: auto;
+    margin: 0 1rem;
     box-sizing: border-box;
 }
 
@@ -252,6 +263,10 @@ html, body {
 }
 
 /* Benefícios */
+.beneficios .card {
+    width: 30%;
+}
+
 .beneficios .fa {
     font-size: 3rem;
     color: #1d527c;
@@ -271,13 +286,22 @@ html, body {
 .section-funcionalidades {
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    padding: 6rem 0;
     color: #4c4c4c;
 }
 
-.section-funcionalidades .row {
-    margin: auto;
+.section-funcionalidades.bg-cinza .linha {
+    flex-direction: row-reverse;
+}
+
+.section-funcionalidades .linha {
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+}
+
+.section-funcionalidades .texto {
+    width: 40%;
 }
 
 .section-funcionalidades-titulo {
@@ -298,18 +322,92 @@ html, body {
     border-bottom: 3px solid #1d527c;
 }
 
+/* Post */
+.banner-page {
+    background-color: #347080;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    background-image: url('./images/header_one.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-page h1 {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+.post-page {
+    display: flex;
+}
+
+.post {
+    padding: 6rem 3rem 6rem 0;
+    color: #4c4c4c;
+    width: 80%;
+}
+
+.post h2 {
+    font-size: 1.8rem;
+}
+
+.post h3 {
+    font-size: 1.5rem;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 6rem 0;
+}
+
+.sidebar-widget {
+    margin: 0 auto 2rem;
+}
+
+.sidebar-widget h5 {
+    color: #616161;
+}
+
+.sidebar-widget h5::after {
+    display: block;
+    width: 100px;
+    content: '';
+    border: 1px solid #ccc;
+    margin: .3rem 0;
+}
+
+.input-pesquisa {
+    background-color: #eaeaea;
+    border: 0;
+    color: #616161;
+}
+
+.btn-pesquisa .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #fff;
+}
+
 /* Cinto*/
+.cinto-demonstracao, .cinto-oportunidade {
+    padding: 3rem 0;
+}
+
 .cinto-oportunidade .h5 {
     color: #fff;
+    margin-bottom: 1.5rem;
 }
 
 /* Blog */
 .blog {
-    margin: 5rem auto;
+    margin: 8rem auto 6rem;
 }
 
 .titulo-blog {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     margin-top: 2rem;
     color: #4c4c4c;
 }
@@ -325,6 +423,59 @@ html, body {
     color: #fff;
 }
 
+/* Vantagens */
+.vantagens {
+    color: #4c4c4c;
+    padding: 6rem 0;
+}
+
+.vantagens h3 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.vantagens h6 {
+    margin-bottom: 4rem;
+}
+
+.vantagens .btn {
+    margin-top: 2rem;
+}
+
+.linha {
+    margin: 2rem auto;
+    display: flex;
+}
+
+.coluna {
+    width: 33.333%;
+    padding: 0 1rem;
+}
+
+.coluna img, .coluna h5 {
+    margin-bottom: 1rem;
+}
+
+.coluna p {
+    margin-bottom: 0;
+}
+
+/* Área */
+.area {
+    margin: 4rem auto 6rem;
+    color: #4c4c4c;
+}
+
+.area h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 1.4rem 0;
+    box-sizing: border-box;
+}
+
 /* Rodapé */
 .btn-link {
     border: 1px solid #d8d8d8;
@@ -334,6 +485,7 @@ html, body {
     text-transform: uppercase;
     cursor: pointer;
     color: #616161 !important;
+    text-align: center;
 }
 
 .btn-link:hover, .btn-link:focus, .btn-link:active {
@@ -356,7 +508,79 @@ html, body {
     text-align: center;
 }
 
+/* Área perguntas */
+.area-perguntas {
+    margin: 3rem auto;
+    color: #4c4c4c;
+}
+
+.area-perguntas .nav-tabs .nav-link.active {
+    color: #0eadc7;
+}
+
+.area-perguntas .nav-link {
+    color: #4c4c4c;
+}
+
+.area-perguntas .card {
+    box-shadow: none;
+}
+
+.area-perguntas .card:hover {
+    box-shadow: none;
+}
+
+.area-perguntas .card-header {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.area-perguntas .collapsed .btn-pergunta {
+    float: right;
+    height: 15px;
+    width: 15px;
+    background-color: #d6d6d6;
+    border: 0;
+    border-radius: 10px;
+}
+
+.area-perguntas .btn-pergunta {
+    float: right;
+    height: 15px;
+    width: 15px;
+    background-color: #0dadc7;
+    border: 0;
+    border-radius: 10px;
+}
+
+.ef-seta:after {
+    font-family: 'Glyphicons Halflings';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f107';
+    transform: rotate(90deg);
+    transition: all linear .25s;
+    float: right;
+    margin-top: .4rem;
+}
+
+.ef-seta.collapsed:after {
+    transform: rotate(0deg);
+}
+
 /* Rodapé */
+.rodape-info {
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+
+.rodape-copyright {
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
 .lista-menu {
     margin-bottom: 0;
     padding: 0;
@@ -370,6 +594,7 @@ html, body {
 
 .lista-menu > li a {
     font-size: .9rem;
+    color: #616161;
 }
 
 .footer-logo {
@@ -386,29 +611,132 @@ html, body {
     margin-bottom: .5rem;
 }
 
+.area-contato p {
+    font-size: .8rem;
+}
+
+.titulo-form {
+    font-size: 1.25rem;
+}
+
+.bg-mapa {
+    background-image: url('./images/azInfoSatelite.PNG');
+    height: 463px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Responsive */
+@media (max-width: 1200px) {
+    .produtos .linha {
+        flex-direction: column;
+    }
+
+    .produtos .card {
+        margin: 0 auto 4rem;
+    }
+
+    .produtos .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .blog .linha {
+        flex-wrap: wrap;
+    }
+
+    .col-post {
+        margin: 1rem;
+    }
+}
+
 @media (max-width: 991px) {
     .navbar-light .navbar-nav .nav-link {
         padding: 1rem;
     }
 
-    .titulo-principal, .titulo-secundario {
+    .titulo-principal, .titulo-secundario, .coluna, .produtos .card, .secao-clientes .col, .section-funcionalidades .texto {
         width: 100%;
     }
 
-    .produtos, .beneficios {
+    .produtos, .beneficios, .coluna, .section-funcionalidades {
         padding: 3rem 0;
     }
 
     .card-cliente {
         width: 95%;
+        padding: 2rem;
+        flex-wrap: wrap;
     }
 
-    .titulo-blog, .blog {
+    .titulo-blog {
         margin-bottom: 3rem;
     }
 
-    .blog .row {
+    .blog {
+        margin: 18rem auto 3rem;
+    }
+
+    .linha, .cinto-demonstracao .alinhar-centralizado, .section-funcionalidades.bg-cinza .linha {
+        flex-direction: column;
+    }
+
+    .secao-clientes .linha, .rodape-info .linha {
+        display: block;
+    }
+
+    .secao-clientes {
+        height: 39rem;
+    }
+
+    .secao-clientes .col, .rodape-info .col, .section-funcionalidades .texto {
+        margin: 2rem auto;
+    }
+
+    .botao-centro {
+        margin: 2rem auto 0;
+    }
+
+    .col-post, .beneficios .card {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    .blog .linha, .section-funcionalidades .linha {
         margin: 0 auto;
+    }
+
+    .cinto-demonstracao .alinhar-centralizado .h5 {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-cliente a {
+        margin: 1rem;
+    }
+
+    .area {
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-img {
+        margin-left: -1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .beneficios .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .beneficios .card {
+        width: 100%;
+    }
+
+    .blog {
+        margin: 24rem auto 3rem;
     }
 }
